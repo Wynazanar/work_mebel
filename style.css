@@ -7,24 +7,80 @@
     --gray: #65736A;
     --light-gray: #F5F3EC;
     --green: #203D32;
-
+    --light-green: #E7EBDF;
 }
 
 body * {
     font-family: var(--font-family);
     color: var(--green);
+    scroll-behavior: smooth;
 }
 
 .container {
     max-width: 1440px;
-    padding: 72px;
     width: 100%;
+    padding-inline: 72px;
     margin: 0px auto;
 }
+
+/* HEADER */
+header {
+    background: var(--light-gray);
+    border-bottom: 1px solid #D5DCD0;
+    padding-block: 24px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand h2 {
+    color: var(--green);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav .active {
+    font-weight: 700;
+    position: relative;
+}
+
+.nav .active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 2px;
+    width: 100%;
+    background: #203D32;
+    border-radius: 25px;
+}
+
+
+
+
 
 .grid {
     display: flex;
     align-items: start;
+}
+
+section {
+    padding-block: 72px;
 }
 
 .section.lime {
@@ -33,6 +89,10 @@ body * {
 
 .section.white {
     background: var(--light-gray);
+}
+
+.section.green {
+    background: var(--light-green);
 }
 
 .section-label {
@@ -49,7 +109,7 @@ body * {
 }
 
 .section-title {
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 600;
     padding-block: 26px;
 }
@@ -164,6 +224,9 @@ form {
     font-weight: 600;
 }
 
+.submit-btn.small {
+    padding: 12px 16px;
+}
 
 .form-submit {
     display: flex;
@@ -214,6 +277,39 @@ main {
     background: var(--light-gray);
 }
 
+main h1 {
+    font-size: 88px;
+    font-weight: 600;
+    margin-top: 26px;
+    line-height: 85px;
+}
+
+main h3 {
+    margin-top: 26px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+main h5 {
+    color: var(--gray);
+    font-size: 17px;
+    margin-bottom: 26px;
+}
+
+main p {
+    color: var(--gray);
+    font-size: 12px;
+    margin-top: 26px;
+}
+
+main img {
+    border-radius: 20px;
+    width: 618px;
+    height: 610px;
+}
+
+
 .service-assurances {
     border-block: 1px solid #D5DCD0;
     display: grid;
@@ -233,9 +329,149 @@ main {
 .assurance p {
     color: var(--gray);
     font-size: 13px;
+    margin-top: 0;
 }
 
 .assurance h5 {
     font-size: 15px;
     font-weight: 600;
+    color: var(--green);
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+.primary-category {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.furniture-category {
+    height: fit-content;
+    width: 416px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+}
+
+.category-photo {
+    overflow: hidden;
+    height: 220px;
+}
+
+.category-information {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.category-heading {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.extended-categories {
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.ex-furniture-category {
+    height: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--light-green);
+    display: flex;
+    justify-content: space-between;
+}
+
+.ex-category-photo {
+    width: 220px;
+    height: 194px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.questions {
+    max-width: 800px;
+    width: 100%;
+}
+
+.questions details {
+    border-bottom: 1px solid #D5DCD0;
+    padding-block: 22px;
+    cursor: default;
+}
+
+.questions details:first-child {
+    border-top: 1px solid #D5DCD0;
+}
+
+.questions details summary {
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.questions details p {
+    color: var(--gray);
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: var(--green);
+}
+
+footer * {
+    color: #BFCDBF;
+    font-size: 12px;
+}
+
+.legal-information {
+    padding-block: 40px 32px;
+    border-top: 1px solid #426052;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.footer-links {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-top: 56px;
 }

@@ -10,6 +10,31 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="brand">
+                    <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="36" rx="10" fill="#193E30" />
+                        <path d="M24.7091 17.0417V11.291H18.9584M24.7091 11.291L11.2909 24.7092" stroke="#D1EE87"
+                            stroke-width="1.7" stroke-linecap="round" />
+                    </svg>
+                    <h2>Освободим</h2>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="active">Главная</a>
+                    <a href="#">Услуги и цены</a>
+                </nav>
+                <button type="submit" class="submit-btn small">
+                    Оставить заявку
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.18198 9.1821V0.850098H0.849976M9.18198 0.850098L0.849976 9.1821" stroke="#F5F3EC"
+                            stroke-width="1.7" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
     <main>
         <div class="container" style="padding: 48px 72px 32px 72px;">
@@ -17,17 +42,24 @@
                 <p style="width: 8px; height: 8px; background: var(--green); border-radius: 2px;"></p>
                 <p>Вывоз старой мебели · СПб и область</p>
             </div>
-            <h1>Освободим место для нового</h1>
-            <h3>Вывоз старой мебели с грузчиками — без тяжёлой работы для вас.</h3>
-            <h5>Разберём, аккуратно вынесем и увезём. От одного дивана до целой квартиры.</h5>
-            <button type="submit" class="submit-btn">
-                Рассчитать стоимость
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.18198 9.1821V0.850098H0.849976M9.18198 0.850098L0.849976 9.1821" stroke="#F5F3EC"
-                        stroke-width="1.7" stroke-linecap="round" />
-                </svg>
-            </button>
-            <p>Итоговую стоимость согласуем до выезда.</p>
+            <div style="display: flex; align-items: start; gap: 48px; justify-content: space-between;">
+                <div style="max-width: 630px;">
+                    <h1>Освободим место для нового</h1>
+                    <h3>Вывоз старой мебели с грузчиками - без</br> тяжёлой работы для вас.</h3>
+                    <h5>Разберём, аккуратно вынесем и увезём. От одного дивана</br> до целой квартиры.</h5>
+                    <button type="submit" class="submit-btn">
+                        Рассчитать стоимость
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.18198 9.1821V0.850098H0.849976M9.18198 0.850098L0.849976 9.1821"
+                                stroke="#F5F3EC" stroke-width="1.7" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <p class="">Итоговую стоимость согласуем до выезда.</p>
+                </div>
+                <div>
+                    <img src="s.png">
+                </div>
+            </div>
 
             <div class="service-assurances">
                 <div class="assurance">
@@ -79,6 +111,84 @@
             </div>
         </div>
     </main>
+
+    <section class="section white">
+        <div class="container">
+            <div class="section-label">
+                <p style="width: 8px; height: 8px; background: var(--green); border-radius: 2px;"></p>
+                <p>Что вывозим</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: end; margin-bottom: 32px;">
+                <h2 class="section-title" style="padding-bottom: 0;">Большие вещи - </br>не большие проблемы</h2>
+                <p style="max-width: 420px; color: var(--gray); font-size: 16px;">Выберите, с чем нужна помощь. Смешанный состав мебели тоже можно вывезти за один приезд.</p>
+            </div>
+            
+            <div class="primary-category">
+                <div class="furniture-category">
+                    <div class="category-photo">
+                        <img src="s.png" style="width: 100%;">
+                    </div>
+                    <div class="category-information">
+                        <h2 class="category-heading">Диваны и кресла</h2>
+                        <p>Прямые, угловые, раскладные</p>
+                        <h3 class="price">от 2 900 ₽</h3>
+                    </div>
+                </div>
+
+                <div class="furniture-category">
+                    <div class="category-photo">
+                        <img src="s.png" style="width: 100%;">
+                    </div>
+                    <div class="category-information">
+                        <h2 class="category-heading">Шкафы и стенки</h2>
+                        <p>Разберём на удобные части</p>
+                        <h3 class="price">от 3 500 ₽</h3>
+                    </div>
+                </div>
+
+                <div class="furniture-category">
+                    <div class="category-photo">
+                        <img src="s.png" style="width: 100%;">
+                    </div>
+                    <div class="category-information">
+                        <h2 class="category-heading">Кровати и матрасы</h2>
+                        <p>Каркас, основание и матрас</p>
+                        <h3 class="price">от 1 900 ₽</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extended-categories">
+                <div class="ex-furniture-category">
+                    <div class="category-information">
+                        <h2 class="category-heading">Кухонные гарнитуры</h2>
+                        <p>Шкафчики, фасады и столешницы</p>
+                        <h3 class="price">от 5 900 ₽</h3>
+                    </div>
+                    <div class="ex-category-photo">
+                        <img src="s.png" style="width: 100%;">
+                    </div>
+                </div>
+
+                <div class="ex-furniture-category">
+                    <div class="category-information">
+                        <h2 class="category-heading">Квартира целиком</h2>
+                        <p>Мебель из нескольких комнат</p>
+                        <h3 class="price">от 12 900 ₽</h3>
+                    </div>
+                    <div class="ex-category-photo">
+                        <img src="s.png" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+
+            <p style="font-size: 12px;">Ориентировочные цены. Этаж, доступ к лифту, разборка и адрес влияют на итоговую стоимость.</p>
+        </div>
+    </section>
+
+    <section class="section green">
+
+    </section>
 
     <section class="section white">
         <div class="container">
@@ -140,7 +250,46 @@
         </div>
     </section>
 
-    <section id="#form" class="section lime">
+    <section class="section white">
+        <div class="container">
+            <div style="display: flex; align-items: start; ">
+                <div style="width: 100%;">
+<div class="section-label">
+                    <p style="width: 8px; height: 8px; background: var(--green); border-radius: 2px;"></p>
+                    <p>Полезно знать</p>
+                </div> 
+            <h2 class="section-title">Отвечаем до выезда</h2>
+            <p class="section-subtitle">У каждого дома свои особенности. Если вашего вопроса здесь нет, добавьте его в заявку.</p>
+            <a href="#form">Обсудить мой случай</a>
+                </div>
+
+                <div class="questions">
+                    <details open>
+                        <summary>Как узнать стоимость до приезда?</summary>
+                        <p>Пришлите фотографии мебели и укажите адрес, этаж и наличие лифта. Уточним размеры, объём и необходимость разборки, затем согласуем итоговую сумму до выезда.</p>
+                    </details>
+                    <details>
+                        <summary>Нужно ли самостоятельно разбирать мебель?</summary>
+                        <p>Грузчики сами справятся.</p>
+                    </details>
+                    <details>
+                        <summary>Можно вывезти только один предмет?</summary>
+                        <p>Да, всем будет проще.</p>
+                    </details>
+                    <details>
+                        <summary>Что делать, если мебель не помещается в лифт?</summary>
+                        <p>По лестнице понесем.</p>
+                    </details>
+                    <details>
+                        <summary>Куда отправится старая мебель?</summary>
+                        <p>Ценная на продажу, а вот говно на свалку около дома.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form" class="section lime">
         <div class="container grid">
             <div style="max-width: 500px; margin-right: 72px;">
                 <div class="section-label">
@@ -165,7 +314,7 @@
                     </div>
                     <div class="form-input">
                         <p>Телефон для связи *</p>
-                        <input type="phone" placeholder="Ваш телефон">
+                        <input type="tel" placeholder="Ваш телефон">
                     </div>
                 </div>
 
@@ -220,6 +369,37 @@
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <div></div>
+                <div>
+                    <p>УСЛУГИ</p>
+                    <ul>
+                        <a href="#">Услуги и цены</a>
+                        <a href="#"></a>
+                    </ul>
+                </div>
+                <div>
+                    <p>ИНФОРМАЦИЯ</p>
+                    <ul>
+                        <a href="#">Услуги и цены</a>
+                        <a href="#">Как проходит вывоз</a>
+                        <a href="#">Районы выезда</a>
+                        <a href="#">Вопросы и ответы</a>
+                    </ul>
+                </div>
+                <div>
+                    <p>КОНТАКТЫ СЛУЖБЫ</p>
+                </div>
+            </div>
+            <div class="legal-information">
+                <p>© Освободим, 2026</p>
+                <a href="#">Политика обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
