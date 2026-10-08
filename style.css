@@ -228,6 +228,16 @@ form {
     padding: 12px 16px;
 }
 
+.submit-btn.white {
+    background: var(--light-gray);
+    border: 1px solid #D5DCD0;
+    color: var(--green);
+}
+
+.submit-btn.white path {
+    stroke: var(--green);
+}
+
 .form-submit {
     display: flex;
     align-items: center;
@@ -474,4 +484,68 @@ footer * {
     justify-content: space-between;
     margin-bottom: 40px;
     padding-top: 56px;
+}
+
+.price-examples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.illustrative-price {
+    background: white;
+    padding: 28px;
+    border-radius: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.illustrative-price.lime {
+    background: var(--lime);
+}
+
+.scenario-title {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.ill-price {
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.ill-description {
+    font-size: 14px;
+    color: var(--gray);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D5DCD0;
+}
+
+.illustrative-price.lime .ill-description {
+    border-bottom: 1px solid #65b165;
+}
+
+.incl-serv {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.incl-serv li {
+    position: relative;
+    font-size: 14px;
+    padding-left: 26px;
+}
+
+.incl-serv li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.1661 4.25L6.37524 12.0411L2.83392 8.49969" stroke="%23193E30" stroke-width="1.7" stroke-linecap="round"/></svg>');
+    background-repeat: no-repeat;
 }
