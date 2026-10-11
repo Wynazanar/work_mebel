@@ -686,13 +686,15 @@ main {
 }
 
 .coverage-text {
-    flex: 1;
+    flex: 0 0 420px;
+    max-width: 420px;
     min-width: 0;
 }
 
 .coverage-areas {
     width: 100%;
-    max-width: 640px;
+    min-width: 0;
+    max-width: none;
 }
 
 .city-districts h3,
@@ -748,7 +750,7 @@ main {
 }
 
 .faq-text {
-    flex: 1;
+    flex: 0 0 420px;
     min-width: 0;
     max-width: 420px;
 }
@@ -769,8 +771,8 @@ main {
 
 .questions {
     flex: 1;
-    max-width: 640px;
-    width: 100%;
+    min-width: 0;
+    max-width: none;
 }
 
 .questions details {
@@ -825,8 +827,9 @@ main {
 }
 
 .form-intro {
-    max-width: 440px;
-    flex-shrink: 0;
+    flex: 0 0 420px;
+    max-width: 420px;
+    min-width: 0;
 }
 
 .form-benefits {
@@ -857,11 +860,11 @@ main {
 }
 
 form {
+    flex: 1;
+    min-width: 0;
     background-color: var(--light-gray);
     padding: 32px;
     border-radius: 20px;
-    width: 100%;
-    max-width: 560px;
 }
 
 .form-input {
@@ -1144,6 +1147,7 @@ footer * {
     .questions,
     .faq-text,
     .form-intro {
+        flex: none;
         max-width: 100%;
     }
 }
